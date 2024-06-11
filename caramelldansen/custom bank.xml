@@ -1,0 +1,3297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bank NUM_INST="16" NUM_DRUM="64" NUM_SFX="0" ATnum="1">
+  <abindexentry>
+    <struct name="ABIndexEntry">
+      <field name="addr" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Bank (in Audiobank)"
+             ptrto="ABHeader" value="127664"/>
+      <field name="len" datatype="uint32" ispointer="0" isarray="0" meaning="Bank Length"
+             value="4080"/>
+      <field name="unknownA" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+             defaultval="2" value="2"/>
+      <field name="unknownB" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+             defaultval="2" value="2"/>
+      <field name="tablenum" datatype="uint8" ispointer="0" isarray="0" meaning="Sample Table number"
+             value="1"/>
+      <field name="unknownD" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+             defaultval="255" value="255"/>
+      <field name="NUM_INST" datatype="uint8" ispointer="0" isarray="0" meaning="NUM_INST"
+             value="16"/>
+      <field name="NUM_DRUM" datatype="uint8" ispointer="0" isarray="0" meaning="NUM_DRUM"
+             value="64"/>
+      <field name="unknownG" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+             defaultval="0" value="0"/>
+      <field name="NUM_SFX" datatype="uint8" ispointer="0" isarray="0" meaning="NUM_SFX"
+             value="0"/>
+    </struct>
+  </abindexentry>
+  <abheader>
+    <struct name="ABHeader"/>
+  </abheader>
+  <abbank>
+    <struct name="ABBank">
+      <field name="drumptr" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Drum List"
+             ptrto="ABDrumList" value="3824"/>
+      <field name="sfxptr" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr SFX List"
+             ptrto="ABSFXList" value="0"/>
+      <field name="instlist" datatype="uint32" ispointer="1" isarray="1" meaning="List of Ptrs to Insts"
+             ptrto="ABInstrument" arraylenvar="NUM_INST">
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="2544"
+                 index="0"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="2576"
+                 index="1"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="0"
+                 index="2"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="2608"
+                 index="3"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="2640"
+                 index="4"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="0"
+                 index="5"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="0"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="0"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="2672"
+                 index="-1"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="0"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="0"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="0"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="2704"
+                 index="-1"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="0"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="2736"
+                 index="-1"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABInstrument" value="2768"
+                 index="-1"/>
+      </field>
+    </struct>
+  </abbank>
+  <abdrumlist address="3824">
+    <struct name="ABDrumList">
+      <field name="drumlist" datatype="uint32" ispointer="1" isarray="1" meaning="List of Ptrs to Drums"
+             ptrto="ABDrum" arraylenvar="NUM_DRUM">
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2800" index="0"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2816" index="1"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2832" index="2"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2848" index="3"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2864" index="4"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2880" index="5"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2896" index="6"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2912" index="7"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2928" index="8"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2944" index="9"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2960" index="10"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2976" index="11"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="2992" index="12"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3008" index="13"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3024" index="14"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3040" index="15"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3056" index="16"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3072" index="17"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3088" index="18"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3104" index="19"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3120" index="20"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3136" index="21"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3152" index="22"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3168" index="23"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3184" index="24"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3200" index="25"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3216" index="26"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3232" index="27"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3248" index="28"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3264" index="29"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3280" index="30"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3296" index="31"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3312" index="32"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3328" index="33"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3344" index="34"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3360" index="35"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3376" index="36"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3392" index="37"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3408" index="38"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3424" index="39"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3440" index="40"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3456" index="41"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3472" index="42"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3488" index="43"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3504" index="44"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3520" index="45"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3536" index="46"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3552" index="47"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3568" index="48"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3584" index="49"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3600" index="50"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3616" index="51"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3632" index="52"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3648" index="53"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3664" index="54"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3680" index="55"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3696" index="56"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3712" index="57"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3728" index="58"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3744" index="59"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3760" index="60"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3776" index="61"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3792" index="62"/>
+        <element datatype="uint32" ispointer="1" ptrto="ABDrum" value="3808" index="63"/>
+      </field>
+    </struct>
+  </abdrumlist>
+  <absfxlist/>
+  <instruments>
+    <item address="1680" name="Fiddle" map="program" program="0" transpose="0">
+      <struct name="ABInstrument">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="splitpoint1" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 1" value="0"/>
+        <field name="splitpoint2" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 2" value="127"/>
+        <field name="releaserate" datatype="uint8" ispointer="0" isarray="0"
+               meaning="None" value="246"/>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="1337" index="1"/>
+        <field name="splits" datatype="ABSound" ispointer="0" isarray="1" meaning="List of 3 Sounds for Splits"
+               arraylenfixed="3">
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="0"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.0"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="1337" index="5"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.5946040153503418"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="0"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.0"/>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="3488" name="Ocarina" map="program" program="0" transpose="0">
+      <struct name="ABInstrument">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="splitpoint1" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 1" value="0"/>
+        <field name="splitpoint2" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 2" value="127"/>
+        <field name="releaserate" datatype="uint8" ispointer="0" isarray="0"
+               meaning="None" value="236"/>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="1337" index="2"/>
+        <field name="splits" datatype="ABSound" ispointer="0" isarray="1" meaning="List of 3 Sounds for Splits"
+               arraylenfixed="3">
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="0"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.0"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="1337" index="6"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.6299610137939453"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="0"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.0"/>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1216" name="Bass Pad (SYN_127)" map="program" program="0"
+          transpose="0">
+      <struct name="ABInstrument">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="splitpoint1" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 1" value="0"/>
+        <field name="splitpoint2" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 2" value="127"/>
+        <field name="releaserate" datatype="uint8" ispointer="0" isarray="0"
+               meaning="None" value="248"/>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="1337" index="3"/>
+        <field name="splits" datatype="ABSound" ispointer="0" isarray="1" meaning="List of 3 Sounds for Splits"
+               arraylenfixed="3">
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="0"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.0"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="1337" index="7"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.6890624761581421"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="0"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.0"/>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="3024" name="Baby Goron Singing Voice" map="program"
+          program="0" transpose="0">
+      <struct name="ABInstrument">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="splitpoint1" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 1" value="0"/>
+        <field name="splitpoint2" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 2" value="127"/>
+        <field name="releaserate" datatype="uint8" ispointer="0" isarray="0"
+               meaning="None" value="248"/>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="1337" index="1"/>
+        <field name="splits" datatype="ABSound" ispointer="0" isarray="1" meaning="List of 3 Sounds for Splits"
+               arraylenfixed="3">
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="0"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.0"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="1337" index="8"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.5297315120697021"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="0"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.0"/>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="2048" name="Synth Strings" map="program" program="0"
+          transpose="0">
+      <struct name="ABInstrument">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="splitpoint1" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 1" value="0"/>
+        <field name="splitpoint2" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 2" value="127"/>
+        <field name="releaserate" datatype="uint8" ispointer="0" isarray="0"
+               meaning="None" value="117"/>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="1337" index="2"/>
+        <field name="splits" datatype="ABSound" ispointer="0" isarray="1" meaning="List of 3 Sounds for Splits"
+               arraylenfixed="3">
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="0"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.0"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="1337" index="9"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.6890624761581421"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="0"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.0"/>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="2336" name="Piano" map="program">
+      <struct name="ABInstrument">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="splitpoint1" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 1" value="29"/>
+        <field name="splitpoint2" datatype="uint8" ispointer="0" isarray="0"
+               meaning="Split Point 2" value="44"/>
+        <field name="releaserate" datatype="uint8" ispointer="0" isarray="0"
+               meaning="None" value="93"/>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="1337" index="4"/>
+        <field name="splits" datatype="ABSound" ispointer="0" isarray="1" meaning="List of 3 Sounds for Splits"
+               arraylenfixed="3">
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="1337" index="10"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="2.317720890045166"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="1337" index="11"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="1.0"/>
+            </struct>
+          </element>
+          <element datatype="ABSound" ispointer="0" value="0">
+            <struct name="ABSound">
+              <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                     ptrto="ABSample" value="1337" index="12"/>
+              <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                     value="0.5"/>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+  </instruments>
+  <drums>
+    <item address="2800" name="[abdrumlist:0]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.28971493244171142578"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2816" name="[abdrumlist:1]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.30694219470024108887"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2832" name="[abdrumlist:2]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.32519409060478210449"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2848" name="[abdrumlist:3]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.34453123807907104492"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2864" name="[abdrumlist:4]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.36501842737197875977"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2880" name="[abdrumlist:5]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.3867232203483581543"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2896" name="[abdrumlist:6]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.40971931815147399902"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2912" name="[abdrumlist:7]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.43408250808715820313"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2928" name="[abdrumlist:8]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.45989409089088439941"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2944" name="[abdrumlist:9]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.48724091053009033203"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2960" name="[abdrumlist:10]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.51621389389038085938"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2976" name="[abdrumlist:11]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.54690957069396972656"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="2992" name="[abdrumlist:12]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.57943058013916015625"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3008" name="[abdrumlist:13]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.61388504505157470703"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3024" name="[abdrumlist:14]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.65038883686065673828"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3040" name="[abdrumlist:15]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="64"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1232" index="0"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.68906247615814208984"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3056" name="[abdrumlist:16]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="54"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1344" index="1"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.9438750147819519043"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3072" name="[abdrumlist:17]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="54"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1344" index="1"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3088" name="[abdrumlist:18]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="53"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1456" index="2"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.8908990025520324707"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3104" name="[abdrumlist:19]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="53"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1456" index="2"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.9438750147819519043"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3120" name="[abdrumlist:20]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="53"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1456" index="2"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3136" name="[abdrumlist:21]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="53"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1456" index="2"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.0594630241394042969"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3152" name="[abdrumlist:22]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="53"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1456" index="2"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.1224620342254638672"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3168" name="[abdrumlist:23]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="123"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1568" index="3"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3184" name="[abdrumlist:24]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="123"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1568" index="3"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.0594630241394042969"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3200" name="[abdrumlist:25]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.47193700075149536133"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3216" name="[abdrumlist:26]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.5"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3232" name="[abdrumlist:27]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.52973198890686035156"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3248" name="[abdrumlist:28]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.56123101711273193359"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3264" name="[abdrumlist:29]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.59460401535034179688"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3280" name="[abdrumlist:30]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.6299610137939453125"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3296" name="[abdrumlist:31]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.66742002964019775391"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3312" name="[abdrumlist:32]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.70710700750350952148"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3328" name="[abdrumlist:33]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.74915397167205810547"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3344" name="[abdrumlist:34]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.79370099306106567383"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3360" name="[abdrumlist:35]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.84089702367782592773"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3376" name="[abdrumlist:36]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.8908990025520324707"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3392" name="[abdrumlist:37]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="0.9438750147819519043"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3408" name="[abdrumlist:38]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3424" name="[abdrumlist:39]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.0594630241394042969"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3440" name="[abdrumlist:40]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.1224620342254638672"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3456" name="[abdrumlist:41]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.1892069578170776367"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3472" name="[abdrumlist:42]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.259920954704284668"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3488" name="[abdrumlist:43]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.3348400592803955078"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3504" name="[abdrumlist:44]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.414214015007019043"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3520" name="[abdrumlist:45]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.4983069896697998047"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3536" name="[abdrumlist:46]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.5874010324478149414"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3552" name="[abdrumlist:47]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.6817929744720458984"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3568" name="[abdrumlist:48]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.7817980051040649414"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3584" name="[abdrumlist:49]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="1.8877489566802978516"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3600" name="[abdrumlist:50]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="2"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3616" name="[abdrumlist:51]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="2.1189260482788085938"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3632" name="[abdrumlist:52]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="2.2449240684509277344"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3648" name="[abdrumlist:53]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="2.3784139156341552734"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3664" name="[abdrumlist:54]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="2.5198419094085693359"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3680" name="[abdrumlist:55]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="2.6696801185607910156"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3696" name="[abdrumlist:56]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="2.8284280300140380859"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3712" name="[abdrumlist:57]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="2.9966149330139160156"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3728" name="[abdrumlist:58]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="3.1748030185699462891"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3744" name="[abdrumlist:59]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="3.3635859489440917969"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3760" name="[abdrumlist:60]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="3.5635960102081298828"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3776" name="[abdrumlist:61]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="3.7754979133605957031"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3792" name="[abdrumlist:62]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="4"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+    <item address="3808" name="[abdrumlist:63]">
+      <struct name="ABDrum">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="180"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="11"/>
+        <field name="unknown3" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="unknown4" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               defaultval="0" value="0"/>
+        <field name="drumsound" datatype="ABSound" ispointer="0" isarray="0"
+               meaning="Drum Sound" value="0">
+          <struct name="ABSound">
+            <field name="sample" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Sample"
+                   ptrto="ABSample" value="1680" index="4"/>
+            <field name="tuning" datatype="float32" ispointer="0" isarray="0" meaning="None"
+                   value="4.2378530502319335938"/>
+          </struct>
+        </field>
+        <field name="envelope" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr Envelope"
+               ptrto="ABEnvelope" value="2480" index="0"/>
+      </struct>
+    </item>
+  </drums>
+  <sfx/>
+  <envelopes>
+    <item address="2480" name="[0. [abdrumlist:0], 1. [abdrumlist:1], 2. [abdrumlist:2], 3. [abdrumlist:3], 4. [abdrumlist:4], 5. [abdrumlist:5]]">
+      <struct name="ABEnvelope">
+        <field name="attackRate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="2"/>
+        <field name="attackLevel" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay1Rate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="1"/>
+        <field name="decay1Level" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay2Rate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="289"/>
+        <field name="decay2Level" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="0"/>
+        <field name="AllFs" datatype="int16" ispointer="0" isarray="0" meaning="None"
+               value="-1"/>
+        <field name="AllZeros" datatype="uint16" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+      </struct>
+    </item>
+    <item address="1424" name="General Use 1">
+      <struct name="ABEnvelope">
+        <field name="attackRate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="2"/>
+        <field name="attackLevel" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay1Rate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="1"/>
+        <field name="decay1Level" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay2Rate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay2Level" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="29430"/>
+        <field name="AllFs" datatype="int16" ispointer="0" isarray="0" meaning="None"
+               value="-1"/>
+        <field name="AllZeros" datatype="uint16" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+      </struct>
+    </item>
+    <item address="3296" name="General Use 0">
+      <struct name="ABEnvelope">
+        <field name="attackRate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="2"/>
+        <field name="attackLevel" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay1Rate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="1"/>
+        <field name="decay1Level" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay2Rate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay2Level" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="29430"/>
+        <field name="AllFs" datatype="int16" ispointer="0" isarray="0" meaning="None"
+               value="-1"/>
+        <field name="AllZeros" datatype="uint16" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+      </struct>
+    </item>
+    <item address="960" name="General Use">
+      <struct name="ABEnvelope">
+        <field name="attackRate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="2"/>
+        <field name="attackLevel" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay1Rate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="1"/>
+        <field name="decay1Level" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay2Rate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay2Level" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="29430"/>
+        <field name="AllFs" datatype="int16" ispointer="0" isarray="0" meaning="None"
+               value="-1"/>
+        <field name="AllZeros" datatype="uint16" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+      </struct>
+    </item>
+    <item address="2032" name="Piano">
+      <struct name="ABEnvelope">
+        <field name="attackRate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="2"/>
+        <field name="attackLevel" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="32700"/>
+        <field name="decay1Rate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="298"/>
+        <field name="decay1Level" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="0"/>
+        <field name="decay2Rate" datatype="int16" ispointer="0" isarray="0"
+               meaning="None" value="1"/>
+        <field name="decay2Level" datatype="uint16" ispointer="0" isarray="0"
+               meaning="None" value="0"/>
+        <field name="AllFs" datatype="int16" ispointer="0" isarray="0" meaning="None"
+               value="-1"/>
+        <field name="AllZeros" datatype="uint16" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+      </struct>
+    </item>
+  </envelopes>
+  <samples>
+    <item address="1232" name="[0. [abdrumlist:0], 1. [abdrumlist:1], 2. [abdrumlist:2], 3. [abdrumlist:3], 4. [abdrumlist:4], 5. [abdrumlist:5]]">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="2494"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="4252192"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1328" index="0"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1248" index="0"/>
+      </struct>
+    </item>
+    <item address="1344" name="[16. [abdrumlist:16], 17. [abdrumlist:17]]">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="10080"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="4254688"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1440" index="1"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1360" index="1"/>
+      </struct>
+    </item>
+    <item address="1456" name="[18. [abdrumlist:18], 19. [abdrumlist:19], 20. [abdrumlist:20], 21. [abdrumlist:21], 22. [abdrumlist:22]]">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="4824"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="4264768"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1552" index="2"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1472" index="2"/>
+      </struct>
+    </item>
+    <item address="1568" name="[23. [abdrumlist:23], 24. [abdrumlist:24]]">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="9792"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="4269600"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1664" index="3"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1584" index="3"/>
+      </struct>
+    </item>
+    <item address="1680" name="[25. [abdrumlist:25], 26. [abdrumlist:26], 27. [abdrumlist:27], 28. [abdrumlist:28], 29. [abdrumlist:29]]">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="17568"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="4279392"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1776" index="4"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1696" index="4"/>
+      </struct>
+    </item>
+    <item address="1088" name="Fiddle Mid">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="16506"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="4235680"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1337" index="5"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1337" index="5"/>
+      </struct>
+    </item>
+    <item address="368" name="Ocarina Mid">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="12924"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="2590384"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1337" index="6"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1337" index="6"/>
+      </struct>
+    </item>
+    <item address="672" name="Bass Pad Mid">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="15462"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="4918480"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1337" index="7"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1337" index="7"/>
+      </struct>
+    </item>
+    <item address="1760" name="Baby Goron Mid">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="13356"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="2851552"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1337" index="8"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1337" index="8"/>
+      </struct>
+    </item>
+    <item address="64" name="Synth Strings Mid">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="31194"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="4688928"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1337" index="9"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1337" index="9"/>
+      </struct>
+    </item>
+    <item address="1472" name="Piano Low">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="31176"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="4165648"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1337" index="10"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1337" index="10"/>
+      </struct>
+    </item>
+    <item address="1616" name="Piano Mid">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="38836"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="4196832"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1337" index="11"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1337" index="11"/>
+      </struct>
+    </item>
+    <item address="1760" name="Piano High">
+      <struct name="ABSample">
+        <field name="unknown1" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="unknown2" datatype="uint8" ispointer="0" isarray="0" meaning="None"
+               value="0"/>
+        <field name="samplesize" datatype="uint16" ispointer="0" isarray="0"
+               meaning="Sample Length" value="26784"/>
+        <field name="sampleaddr" datatype="uint32" ispointer="0" isarray="0"
+               meaning="Sample Address (in Sample Table)" ptrto="ATSample" value="2817232"/>
+        <field name="loop" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMLoop"
+               ptrto="ALADPCMLoop" value="1337" index="12"/>
+        <field name="book" datatype="uint32" ispointer="1" isarray="0" meaning="Ptr ALADPCMBook"
+               ptrto="ALADPCMBook" value="1337" index="12"/>
+      </struct>
+    </item>
+  </samples>
+  <aladpcmbooks>
+    <item address="1248" name="[13. [0. [abdrumlist:0], 1. [abdrumlist:1], 2. [abdrumlist:2], 3. [abdrumlist:3], 4. [abdrumlist:4], 5. [abdrumlist:5]]]">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-55"/>
+                <element datatype="int16" ispointer="0" value="-53"/>
+                <element datatype="int16" ispointer="0" value="-49"/>
+                <element datatype="int16" ispointer="0" value="-46"/>
+                <element datatype="int16" ispointer="0" value="-42"/>
+                <element datatype="int16" ispointer="0" value="-39"/>
+                <element datatype="int16" ispointer="0" value="-37"/>
+                <element datatype="int16" ispointer="0" value="-34"/>
+                <element datatype="int16" ispointer="0" value="1965"/>
+                <element datatype="int16" ispointer="0" value="1830"/>
+                <element datatype="int16" ispointer="0" value="1703"/>
+                <element datatype="int16" ispointer="0" value="1584"/>
+                <element datatype="int16" ispointer="0" value="1474"/>
+                <element datatype="int16" ispointer="0" value="1372"/>
+                <element datatype="int16" ispointer="0" value="1277"/>
+                <element datatype="int16" ispointer="0" value="1188"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-576"/>
+                <element datatype="int16" ispointer="0" value="-731"/>
+                <element datatype="int16" ispointer="0" value="-765"/>
+                <element datatype="int16" ispointer="0" value="-765"/>
+                <element datatype="int16" ispointer="0" value="-754"/>
+                <element datatype="int16" ispointer="0" value="-742"/>
+                <element datatype="int16" ispointer="0" value="-728"/>
+                <element datatype="int16" ispointer="0" value="-715"/>
+                <element datatype="int16" ispointer="0" value="2598"/>
+                <element datatype="int16" ispointer="0" value="2718"/>
+                <element datatype="int16" ispointer="0" value="2716"/>
+                <element datatype="int16" ispointer="0" value="2680"/>
+                <element datatype="int16" ispointer="0" value="2635"/>
+                <element datatype="int16" ispointer="0" value="2587"/>
+                <element datatype="int16" ispointer="0" value="2540"/>
+                <element datatype="int16" ispointer="0" value="2493"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1360" name="[14. [16. [abdrumlist:16], 17. [abdrumlist:17]]]">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1478"/>
+                <element datatype="int16" ispointer="0" value="-1186"/>
+                <element datatype="int16" ispointer="0" value="115"/>
+                <element datatype="int16" ispointer="0" value="947"/>
+                <element datatype="int16" ispointer="0" value="678"/>
+                <element datatype="int16" ispointer="0" value="-140"/>
+                <element datatype="int16" ispointer="0" value="-601"/>
+                <element datatype="int16" ispointer="0" value="-381"/>
+                <element datatype="int16" ispointer="0" value="1643"/>
+                <element datatype="int16" ispointer="0" value="-159"/>
+                <element datatype="int16" ispointer="0" value="-1313"/>
+                <element datatype="int16" ispointer="0" value="-939"/>
+                <element datatype="int16" ispointer="0" value="194"/>
+                <element datatype="int16" ispointer="0" value="833"/>
+                <element datatype="int16" ispointer="0" value="529"/>
+                <element datatype="int16" ispointer="0" value="-177"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1400"/>
+                <element datatype="int16" ispointer="0" value="-1615"/>
+                <element datatype="int16" ispointer="0" value="-906"/>
+                <element datatype="int16" ispointer="0" value="59"/>
+                <element datatype="int16" ispointer="0" value="687"/>
+                <element datatype="int16" ispointer="0" value="752"/>
+                <element datatype="int16" ispointer="0" value="398"/>
+                <element datatype="int16" ispointer="0" value="-55"/>
+                <element datatype="int16" ispointer="0" value="2362"/>
+                <element datatype="int16" ispointer="0" value="1325"/>
+                <element datatype="int16" ispointer="0" value="-86"/>
+                <element datatype="int16" ispointer="0" value="-1005"/>
+                <element datatype="int16" ispointer="0" value="-1101"/>
+                <element datatype="int16" ispointer="0" value="-583"/>
+                <element datatype="int16" ispointer="0" value="80"/>
+                <element datatype="int16" ispointer="0" value="491"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1472" name="[15. [18. [abdrumlist:18], 19. [abdrumlist:19], 20. [abdrumlist:20], 21. [abdrumlist:21], 22. [abdrumlist:22]]]">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1242"/>
+                <element datatype="int16" ispointer="0" value="-1317"/>
+                <element datatype="int16" ispointer="0" value="-644"/>
+                <element datatype="int16" ispointer="0" value="116"/>
+                <element datatype="int16" ispointer="0" value="513"/>
+                <element datatype="int16" ispointer="0" value="474"/>
+                <element datatype="int16" ispointer="0" value="191"/>
+                <element datatype="int16" ispointer="0" value="-84"/>
+                <element datatype="int16" ispointer="0" value="2172"/>
+                <element datatype="int16" ispointer="0" value="1062"/>
+                <element datatype="int16" ispointer="0" value="-191"/>
+                <element datatype="int16" ispointer="0" value="-847"/>
+                <element datatype="int16" ispointer="0" value="-782"/>
+                <element datatype="int16" ispointer="0" value="-316"/>
+                <element datatype="int16" ispointer="0" value="139"/>
+                <element datatype="int16" ispointer="0" value="339"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1124"/>
+                <element datatype="int16" ispointer="0" value="-1561"/>
+                <element datatype="int16" ispointer="0" value="-1552"/>
+                <element datatype="int16" ispointer="0" value="-1299"/>
+                <element datatype="int16" ispointer="0" value="-953"/>
+                <element datatype="int16" ispointer="0" value="-611"/>
+                <element datatype="int16" ispointer="0" value="-326"/>
+                <element datatype="int16" ispointer="0" value="-118"/>
+                <element datatype="int16" ispointer="0" value="2845"/>
+                <element datatype="int16" ispointer="0" value="2828"/>
+                <element datatype="int16" ispointer="0" value="2367"/>
+                <element datatype="int16" ispointer="0" value="1737"/>
+                <element datatype="int16" ispointer="0" value="1114"/>
+                <element datatype="int16" ispointer="0" value="594"/>
+                <element datatype="int16" ispointer="0" value="214"/>
+                <element datatype="int16" ispointer="0" value="-28"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1584" name="[16. [23. [abdrumlist:23], 24. [abdrumlist:24]]]">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-923"/>
+                <element datatype="int16" ispointer="0" value="-281"/>
+                <element datatype="int16" ispointer="0" value="330"/>
+                <element datatype="int16" ispointer="0" value="227"/>
+                <element datatype="int16" ispointer="0" value="-80"/>
+                <element datatype="int16" ispointer="0" value="-127"/>
+                <element datatype="int16" ispointer="0" value="-3"/>
+                <element datatype="int16" ispointer="0" value="56"/>
+                <element datatype="int16" ispointer="0" value="623"/>
+                <element datatype="int16" ispointer="0" value="-733"/>
+                <element datatype="int16" ispointer="0" value="-504"/>
+                <element datatype="int16" ispointer="0" value="177"/>
+                <element datatype="int16" ispointer="0" value="281"/>
+                <element datatype="int16" ispointer="0" value="6"/>
+                <element datatype="int16" ispointer="0" value="-125"/>
+                <element datatype="int16" ispointer="0" value="-41"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1072"/>
+                <element datatype="int16" ispointer="0" value="-877"/>
+                <element datatype="int16" ispointer="0" value="-156"/>
+                <element datatype="int16" ispointer="0" value="332"/>
+                <element datatype="int16" ispointer="0" value="353"/>
+                <element datatype="int16" ispointer="0" value="115"/>
+                <element datatype="int16" ispointer="0" value="-91"/>
+                <element datatype="int16" ispointer="0" value="-135"/>
+                <element datatype="int16" ispointer="0" value="1675"/>
+                <element datatype="int16" ispointer="0" value="297"/>
+                <element datatype="int16" ispointer="0" value="-634"/>
+                <element datatype="int16" ispointer="0" value="-674"/>
+                <element datatype="int16" ispointer="0" value="-219"/>
+                <element datatype="int16" ispointer="0" value="174"/>
+                <element datatype="int16" ispointer="0" value="257"/>
+                <element datatype="int16" ispointer="0" value="119"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1696" name="[17. [25. [abdrumlist:25], 26. [abdrumlist:26], 27. [abdrumlist:27], 28. [abdrumlist:28], 29. [abdrumlist:29]]]">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-972"/>
+                <element datatype="int16" ispointer="0" value="-560"/>
+                <element datatype="int16" ispointer="0" value="138"/>
+                <element datatype="int16" ispointer="0" value="345"/>
+                <element datatype="int16" ispointer="0" value="133"/>
+                <element datatype="int16" ispointer="0" value="-87"/>
+                <element datatype="int16" ispointer="0" value="-113"/>
+                <element datatype="int16" ispointer="0" value="-24"/>
+                <element datatype="int16" ispointer="0" value="1180"/>
+                <element datatype="int16" ispointer="0" value="-291"/>
+                <element datatype="int16" ispointer="0" value="-728"/>
+                <element datatype="int16" ispointer="0" value="-281"/>
+                <element datatype="int16" ispointer="0" value="183"/>
+                <element datatype="int16" ispointer="0" value="239"/>
+                <element datatype="int16" ispointer="0" value="51"/>
+                <element datatype="int16" ispointer="0" value="-84"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-986"/>
+                <element datatype="int16" ispointer="0" value="-1135"/>
+                <element datatype="int16" ispointer="0" value="-833"/>
+                <element datatype="int16" ispointer="0" value="-413"/>
+                <element datatype="int16" ispointer="0" value="-75"/>
+                <element datatype="int16" ispointer="0" value="113"/>
+                <element datatype="int16" ispointer="0" value="166"/>
+                <element datatype="int16" ispointer="0" value="137"/>
+                <element datatype="int16" ispointer="0" value="2359"/>
+                <element datatype="int16" ispointer="0" value="1731"/>
+                <element datatype="int16" ispointer="0" value="858"/>
+                <element datatype="int16" ispointer="0" value="156"/>
+                <element datatype="int16" ispointer="0" value="-234"/>
+                <element datatype="int16" ispointer="0" value="-344"/>
+                <element datatype="int16" ispointer="0" value="-284"/>
+                <element datatype="int16" ispointer="0" value="-161"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1104" name="Fiddle Mid Book">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1851"/>
+                <element datatype="int16" ispointer="0" value="-3193"/>
+                <element datatype="int16" ispointer="0" value="-3834"/>
+                <element datatype="int16" ispointer="0" value="-3726"/>
+                <element datatype="int16" ispointer="0" value="-2961"/>
+                <element datatype="int16" ispointer="0" value="-1740"/>
+                <element datatype="int16" ispointer="0" value="-324"/>
+                <element datatype="int16" ispointer="0" value="1014"/>
+                <element datatype="int16" ispointer="0" value="3532"/>
+                <element datatype="int16" ispointer="0" value="4241"/>
+                <element datatype="int16" ispointer="0" value="4122"/>
+                <element datatype="int16" ispointer="0" value="3276"/>
+                <element datatype="int16" ispointer="0" value="1925"/>
+                <element datatype="int16" ispointer="0" value="358"/>
+                <element datatype="int16" ispointer="0" value="-1122"/>
+                <element datatype="int16" ispointer="0" value="-2259"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1729"/>
+                <element datatype="int16" ispointer="0" value="-3122"/>
+                <element datatype="int16" ispointer="0" value="-4177"/>
+                <element datatype="int16" ispointer="0" value="-4908"/>
+                <element datatype="int16" ispointer="0" value="-5335"/>
+                <element datatype="int16" ispointer="0" value="-5491"/>
+                <element datatype="int16" ispointer="0" value="-5411"/>
+                <element datatype="int16" ispointer="0" value="-5135"/>
+                <element datatype="int16" ispointer="0" value="3698"/>
+                <element datatype="int16" ispointer="0" value="4949"/>
+                <element datatype="int16" ispointer="0" value="5814"/>
+                <element datatype="int16" ispointer="0" value="6320"/>
+                <element datatype="int16" ispointer="0" value="6504"/>
+                <element datatype="int16" ispointer="0" value="6409"/>
+                <element datatype="int16" ispointer="0" value="6083"/>
+                <element datatype="int16" ispointer="0" value="5572"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="384" name="Ocarina Mid Book">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-2042"/>
+                <element datatype="int16" ispointer="0" value="-4024"/>
+                <element datatype="int16" ispointer="0" value="-5893"/>
+                <element datatype="int16" ispointer="0" value="-7598"/>
+                <element datatype="int16" ispointer="0" value="-9095"/>
+                <element datatype="int16" ispointer="0" value="-10343"/>
+                <element datatype="int16" ispointer="0" value="-11310"/>
+                <element datatype="int16" ispointer="0" value="-11971"/>
+                <element datatype="int16" ispointer="0" value="4035"/>
+                <element datatype="int16" ispointer="0" value="5909"/>
+                <element datatype="int16" ispointer="0" value="7619"/>
+                <element datatype="int16" ispointer="0" value="9120"/>
+                <element datatype="int16" ispointer="0" value="10371"/>
+                <element datatype="int16" ispointer="0" value="11341"/>
+                <element datatype="int16" ispointer="0" value="12004"/>
+                <element datatype="int16" ispointer="0" value="12343"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1829"/>
+                <element datatype="int16" ispointer="0" value="-3383"/>
+                <element datatype="int16" ispointer="0" value="-4627"/>
+                <element datatype="int16" ispointer="0" value="-5540"/>
+                <element datatype="int16" ispointer="0" value="-6119"/>
+                <element datatype="int16" ispointer="0" value="-6375"/>
+                <element datatype="int16" ispointer="0" value="-6332"/>
+                <element datatype="int16" ispointer="0" value="-6023"/>
+                <element datatype="int16" ispointer="0" value="3789"/>
+                <element datatype="int16" ispointer="0" value="5182"/>
+                <element datatype="int16" ispointer="0" value="6205"/>
+                <element datatype="int16" ispointer="0" value="6853"/>
+                <element datatype="int16" ispointer="0" value="7140"/>
+                <element datatype="int16" ispointer="0" value="7091"/>
+                <element datatype="int16" ispointer="0" value="6745"/>
+                <element datatype="int16" ispointer="0" value="6149"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="688" name="Bass Pad Mid Book">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-2007"/>
+                <element datatype="int16" ispointer="0" value="-3919"/>
+                <element datatype="int16" ispointer="0" value="-5687"/>
+                <element datatype="int16" ispointer="0" value="-7264"/>
+                <element datatype="int16" ispointer="0" value="-8611"/>
+                <element datatype="int16" ispointer="0" value="-9697"/>
+                <element datatype="int16" ispointer="0" value="-10497"/>
+                <element datatype="int16" ispointer="0" value="-10995"/>
+                <element datatype="int16" ispointer="0" value="3999"/>
+                <element datatype="int16" ispointer="0" value="5803"/>
+                <element datatype="int16" ispointer="0" value="7412"/>
+                <element datatype="int16" ispointer="0" value="8787"/>
+                <element datatype="int16" ispointer="0" value="9895"/>
+                <element datatype="int16" ispointer="0" value="10711"/>
+                <element datatype="int16" ispointer="0" value="11219"/>
+                <element datatype="int16" ispointer="0" value="11411"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-2002"/>
+                <element datatype="int16" ispointer="0" value="-3924"/>
+                <element datatype="int16" ispointer="0" value="-5731"/>
+                <element datatype="int16" ispointer="0" value="-7394"/>
+                <element datatype="int16" ispointer="0" value="-8885"/>
+                <element datatype="int16" ispointer="0" value="-10182"/>
+                <element datatype="int16" ispointer="0" value="-11265"/>
+                <element datatype="int16" ispointer="0" value="-12120"/>
+                <element datatype="int16" ispointer="0" value="4013"/>
+                <element datatype="int16" ispointer="0" value="5862"/>
+                <element datatype="int16" ispointer="0" value="7562"/>
+                <element datatype="int16" ispointer="0" value="9088"/>
+                <element datatype="int16" ispointer="0" value="10414"/>
+                <element datatype="int16" ispointer="0" value="11522"/>
+                <element datatype="int16" ispointer="0" value="12396"/>
+                <element datatype="int16" ispointer="0" value="13025"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1776" name="Baby Goron Mid Book">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1904"/>
+                <element datatype="int16" ispointer="0" value="-3485"/>
+                <element datatype="int16" ispointer="0" value="-4607"/>
+                <element datatype="int16" ispointer="0" value="-5192"/>
+                <element datatype="int16" ispointer="0" value="-5218"/>
+                <element datatype="int16" ispointer="0" value="-4723"/>
+                <element datatype="int16" ispointer="0" value="-3793"/>
+                <element datatype="int16" ispointer="0" value="-2550"/>
+                <element datatype="int16" ispointer="0" value="3748"/>
+                <element datatype="int16" ispointer="0" value="4955"/>
+                <element datatype="int16" ispointer="0" value="5584"/>
+                <element datatype="int16" ispointer="0" value="5613"/>
+                <element datatype="int16" ispointer="0" value="5081"/>
+                <element datatype="int16" ispointer="0" value="4080"/>
+                <element datatype="int16" ispointer="0" value="2743"/>
+                <element datatype="int16" ispointer="0" value="1227"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1867"/>
+                <element datatype="int16" ispointer="0" value="-3461"/>
+                <element datatype="int16" ispointer="0" value="-4713"/>
+                <element datatype="int16" ispointer="0" value="-5579"/>
+                <element datatype="int16" ispointer="0" value="-6043"/>
+                <element datatype="int16" ispointer="0" value="-6114"/>
+                <element datatype="int16" ispointer="0" value="-5822"/>
+                <element datatype="int16" ispointer="0" value="-5215"/>
+                <element datatype="int16" ispointer="0" value="3796"/>
+                <element datatype="int16" ispointer="0" value="5168"/>
+                <element datatype="int16" ispointer="0" value="6118"/>
+                <element datatype="int16" ispointer="0" value="6627"/>
+                <element datatype="int16" ispointer="0" value="6705"/>
+                <element datatype="int16" ispointer="0" value="6384"/>
+                <element datatype="int16" ispointer="0" value="5719"/>
+                <element datatype="int16" ispointer="0" value="4779"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="80" name="Synth Strings Mid Book">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1852"/>
+                <element datatype="int16" ispointer="0" value="-3363"/>
+                <element datatype="int16" ispointer="0" value="-4432"/>
+                <element datatype="int16" ispointer="0" value="-5007"/>
+                <element datatype="int16" ispointer="0" value="-5085"/>
+                <element datatype="int16" ispointer="0" value="-4707"/>
+                <element datatype="int16" ispointer="0" value="-3949"/>
+                <element datatype="int16" ispointer="0" value="-2915"/>
+                <element datatype="int16" ispointer="0" value="3719"/>
+                <element datatype="int16" ispointer="0" value="4901"/>
+                <element datatype="int16" ispointer="0" value="5538"/>
+                <element datatype="int16" ispointer="0" value="5624"/>
+                <element datatype="int16" ispointer="0" value="5206"/>
+                <element datatype="int16" ispointer="0" value="4368"/>
+                <element datatype="int16" ispointer="0" value="3224"/>
+                <element datatype="int16" ispointer="0" value="1906"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1868"/>
+                <element datatype="int16" ispointer="0" value="-3527"/>
+                <element datatype="int16" ispointer="0" value="-4955"/>
+                <element datatype="int16" ispointer="0" value="-6137"/>
+                <element datatype="int16" ispointer="0" value="-7066"/>
+                <element datatype="int16" ispointer="0" value="-7743"/>
+                <element datatype="int16" ispointer="0" value="-8172"/>
+                <element datatype="int16" ispointer="0" value="-8365"/>
+                <element datatype="int16" ispointer="0" value="3867"/>
+                <element datatype="int16" ispointer="0" value="5432"/>
+                <element datatype="int16" ispointer="0" value="6727"/>
+                <element datatype="int16" ispointer="0" value="7746"/>
+                <element datatype="int16" ispointer="0" value="8488"/>
+                <element datatype="int16" ispointer="0" value="8958"/>
+                <element datatype="int16" ispointer="0" value="9170"/>
+                <element datatype="int16" ispointer="0" value="9141"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1488" name="Piano Low Book">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1682"/>
+                <element datatype="int16" ispointer="0" value="-2920"/>
+                <element datatype="int16" ispointer="0" value="-3687"/>
+                <element datatype="int16" ispointer="0" value="-4002"/>
+                <element datatype="int16" ispointer="0" value="-3918"/>
+                <element datatype="int16" ispointer="0" value="-3515"/>
+                <element datatype="int16" ispointer="0" value="-2883"/>
+                <element datatype="int16" ispointer="0" value="-2118"/>
+                <element datatype="int16" ispointer="0" value="3555"/>
+                <element datatype="int16" ispointer="0" value="4489"/>
+                <element datatype="int16" ispointer="0" value="4872"/>
+                <element datatype="int16" ispointer="0" value="4771"/>
+                <element datatype="int16" ispointer="0" value="4279"/>
+                <element datatype="int16" ispointer="0" value="3510"/>
+                <element datatype="int16" ispointer="0" value="2578"/>
+                <element datatype="int16" ispointer="0" value="1593"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1755"/>
+                <element datatype="int16" ispointer="0" value="-3230"/>
+                <element datatype="int16" ispointer="0" value="-4442"/>
+                <element datatype="int16" ispointer="0" value="-5410"/>
+                <element datatype="int16" ispointer="0" value="-6153"/>
+                <element datatype="int16" ispointer="0" value="-6691"/>
+                <element datatype="int16" ispointer="0" value="-7045"/>
+                <element datatype="int16" ispointer="0" value="-7236"/>
+                <element datatype="int16" ispointer="0" value="3770"/>
+                <element datatype="int16" ispointer="0" value="5185"/>
+                <element datatype="int16" ispointer="0" value="6315"/>
+                <element datatype="int16" ispointer="0" value="7181"/>
+                <element datatype="int16" ispointer="0" value="7809"/>
+                <element datatype="int16" ispointer="0" value="8223"/>
+                <element datatype="int16" ispointer="0" value="8445"/>
+                <element datatype="int16" ispointer="0" value="8501"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1632" name="Piano Mid Book">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1871"/>
+                <element datatype="int16" ispointer="0" value="-3548"/>
+                <element datatype="int16" ispointer="0" value="-5016"/>
+                <element datatype="int16" ispointer="0" value="-6267"/>
+                <element datatype="int16" ispointer="0" value="-7299"/>
+                <element datatype="int16" ispointer="0" value="-8110"/>
+                <element datatype="int16" ispointer="0" value="-8706"/>
+                <element datatype="int16" ispointer="0" value="-9095"/>
+                <element datatype="int16" ispointer="0" value="3883"/>
+                <element datatype="int16" ispointer="0" value="5489"/>
+                <element datatype="int16" ispointer="0" value="6859"/>
+                <element datatype="int16" ispointer="0" value="7988"/>
+                <element datatype="int16" ispointer="0" value="8876"/>
+                <element datatype="int16" ispointer="0" value="9528"/>
+                <element datatype="int16" ispointer="0" value="9953"/>
+                <element datatype="int16" ispointer="0" value="10163"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1967"/>
+                <element datatype="int16" ispointer="0" value="-3845"/>
+                <element datatype="int16" ispointer="0" value="-5628"/>
+                <element datatype="int16" ispointer="0" value="-7309"/>
+                <element datatype="int16" ispointer="0" value="-8884"/>
+                <element datatype="int16" ispointer="0" value="-10349"/>
+                <element datatype="int16" ispointer="0" value="-11699"/>
+                <element datatype="int16" ispointer="0" value="-12932"/>
+                <element datatype="int16" ispointer="0" value="4004"/>
+                <element datatype="int16" ispointer="0" value="5860"/>
+                <element datatype="int16" ispointer="0" value="7611"/>
+                <element datatype="int16" ispointer="0" value="9251"/>
+                <element datatype="int16" ispointer="0" value="10776"/>
+                <element datatype="int16" ispointer="0" value="12182"/>
+                <element datatype="int16" ispointer="0" value="13466"/>
+                <element datatype="int16" ispointer="0" value="14626"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1776" name="Piano High Book">
+      <struct name="ALADPCMBook" NUM_PRED="2">
+        <field name="order" datatype="int32" ispointer="0" isarray="0" meaning="None"
+               value="2"/>
+        <field name="npredictors" datatype="int32" ispointer="0" isarray="0"
+               meaning="NUM_PRED" value="2"/>
+        <field name="book" datatype="ALADPCMPredictor" ispointer="0" isarray="1"
+               meaning="Array of Predictors" arraylenvar="NUM_PRED">
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-1937"/>
+                <element datatype="int16" ispointer="0" value="-3729"/>
+                <element datatype="int16" ispointer="0" value="-5347"/>
+                <element datatype="int16" ispointer="0" value="-6767"/>
+                <element datatype="int16" ispointer="0" value="-7970"/>
+                <element datatype="int16" ispointer="0" value="-8944"/>
+                <element datatype="int16" ispointer="0" value="-9681"/>
+                <element datatype="int16" ispointer="0" value="-10178"/>
+                <element datatype="int16" ispointer="0" value="3943"/>
+                <element datatype="int16" ispointer="0" value="5653"/>
+                <element datatype="int16" ispointer="0" value="7155"/>
+                <element datatype="int16" ispointer="0" value="8427"/>
+                <element datatype="int16" ispointer="0" value="9457"/>
+                <element datatype="int16" ispointer="0" value="10236"/>
+                <element datatype="int16" ispointer="0" value="10762"/>
+                <element datatype="int16" ispointer="0" value="11038"/>
+              </field>
+            </struct>
+          </element>
+          <element datatype="ALADPCMPredictor" ispointer="0" value="0">
+            <struct name="ALADPCMPredictor">
+              <field name="data" datatype="int16" ispointer="0" isarray="1" meaning="None"
+                     arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-2001"/>
+                <element datatype="int16" ispointer="0" value="-3939"/>
+                <element datatype="int16" ispointer="0" value="-5800"/>
+                <element datatype="int16" ispointer="0" value="-7572"/>
+                <element datatype="int16" ispointer="0" value="-9240"/>
+                <element datatype="int16" ispointer="0" value="-10795"/>
+                <element datatype="int16" ispointer="0" value="-12226"/>
+                <element datatype="int16" ispointer="0" value="-13525"/>
+                <element datatype="int16" ispointer="0" value="4032"/>
+                <element datatype="int16" ispointer="0" value="5937"/>
+                <element datatype="int16" ispointer="0" value="7751"/>
+                <element datatype="int16" ispointer="0" value="9459"/>
+                <element datatype="int16" ispointer="0" value="11050"/>
+                <element datatype="int16" ispointer="0" value="12515"/>
+                <element datatype="int16" ispointer="0" value="13845"/>
+                <element datatype="int16" ispointer="0" value="15030"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+  </aladpcmbooks>
+  <aladpcmloops>
+    <item address="1328" name="[13. [0. [abdrumlist:0], 1. [abdrumlist:1], 2. [abdrumlist:2], 3. [abdrumlist:3], 4. [abdrumlist:4], 5. [abdrumlist:5]]]">
+      <struct name="ALADPCMLoop" HAS_TAIL="0">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="0"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="4433"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="0"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="0"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL"/>
+      </struct>
+    </item>
+    <item address="1440" name="[14. [16. [abdrumlist:16], 17. [abdrumlist:17]]]">
+      <struct name="ALADPCMLoop" HAS_TAIL="0">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="0"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="17920"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="0"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="0"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL"/>
+      </struct>
+    </item>
+    <item address="1552" name="[15. [18. [abdrumlist:18], 19. [abdrumlist:19], 20. [abdrumlist:20], 21. [abdrumlist:21], 22. [abdrumlist:22]]]">
+      <struct name="ALADPCMLoop" HAS_TAIL="0">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="0"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="8576"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="0"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="0"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL"/>
+      </struct>
+    </item>
+    <item address="1664" name="[16. [23. [abdrumlist:23], 24. [abdrumlist:24]]]">
+      <struct name="ALADPCMLoop" HAS_TAIL="0">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="0"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="17408"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="0"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="0"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL"/>
+      </struct>
+    </item>
+    <item address="1776" name="[17. [25. [abdrumlist:25], 26. [abdrumlist:26], 27. [abdrumlist:27], 28. [abdrumlist:28], 29. [abdrumlist:29]]]">
+      <struct name="ALADPCMLoop" HAS_TAIL="0">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="0"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="31232"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="0"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="0"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL"/>
+      </struct>
+    </item>
+    <item address="1184" name="Fiddle Mid Loop">
+      <struct name="ALADPCMLoop" HAS_TAIL="1">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="19205"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="29315"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="-1"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="29344"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL">
+          <element datatype="ALADPCMTail" ispointer="0" value="0">
+            <struct name="ALADPCMTail">
+              <field name="some_adpcm_data" datatype="int16" ispointer="0" isarray="1"
+                     meaning="None" arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-18419"/>
+                <element datatype="int16" ispointer="0" value="-14099"/>
+                <element datatype="int16" ispointer="0" value="-10938"/>
+                <element datatype="int16" ispointer="0" value="-8852"/>
+                <element datatype="int16" ispointer="0" value="-5231"/>
+                <element datatype="int16" ispointer="0" value="1110"/>
+                <element datatype="int16" ispointer="0" value="7431"/>
+                <element datatype="int16" ispointer="0" value="12497"/>
+                <element datatype="int16" ispointer="0" value="16291"/>
+                <element datatype="int16" ispointer="0" value="17335"/>
+                <element datatype="int16" ispointer="0" value="16523"/>
+                <element datatype="int16" ispointer="0" value="15707"/>
+                <element datatype="int16" ispointer="0" value="14419"/>
+                <element datatype="int16" ispointer="0" value="13286"/>
+                <element datatype="int16" ispointer="0" value="13361"/>
+                <element datatype="int16" ispointer="0" value="14948"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="464" name="Ocarina Mid Loop">
+      <struct name="ALADPCMLoop" HAS_TAIL="1">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="15067"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="22948"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="-1"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="22976"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL">
+          <element datatype="ALADPCMTail" ispointer="0" value="0">
+            <struct name="ALADPCMTail">
+              <field name="some_adpcm_data" datatype="int16" ispointer="0" isarray="1"
+                     meaning="None" arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="24856"/>
+                <element datatype="int16" ispointer="0" value="25666"/>
+                <element datatype="int16" ispointer="0" value="26000"/>
+                <element datatype="int16" ispointer="0" value="25677"/>
+                <element datatype="int16" ispointer="0" value="24615"/>
+                <element datatype="int16" ispointer="0" value="22817"/>
+                <element datatype="int16" ispointer="0" value="20187"/>
+                <element datatype="int16" ispointer="0" value="16860"/>
+                <element datatype="int16" ispointer="0" value="13089"/>
+                <element datatype="int16" ispointer="0" value="9045"/>
+                <element datatype="int16" ispointer="0" value="4826"/>
+                <element datatype="int16" ispointer="0" value="465"/>
+                <element datatype="int16" ispointer="0" value="-3879"/>
+                <element datatype="int16" ispointer="0" value="-8029"/>
+                <element datatype="int16" ispointer="0" value="-11856"/>
+                <element datatype="int16" ispointer="0" value="-15324"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="768" name="Bass Pad Mid Loop">
+      <struct name="ALADPCMLoop" HAS_TAIL="1">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="17068"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="27460"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="-1"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="27488"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL">
+          <element datatype="ALADPCMTail" ispointer="0" value="0">
+            <struct name="ALADPCMTail">
+              <field name="some_adpcm_data" datatype="int16" ispointer="0" isarray="1"
+                     meaning="None" arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="4281"/>
+                <element datatype="int16" ispointer="0" value="4194"/>
+                <element datatype="int16" ispointer="0" value="4008"/>
+                <element datatype="int16" ispointer="0" value="3728"/>
+                <element datatype="int16" ispointer="0" value="3373"/>
+                <element datatype="int16" ispointer="0" value="2941"/>
+                <element datatype="int16" ispointer="0" value="2442"/>
+                <element datatype="int16" ispointer="0" value="1875"/>
+                <element datatype="int16" ispointer="0" value="1266"/>
+                <element datatype="int16" ispointer="0" value="640"/>
+                <element datatype="int16" ispointer="0" value="0"/>
+                <element datatype="int16" ispointer="0" value="-637"/>
+                <element datatype="int16" ispointer="0" value="-1264"/>
+                <element datatype="int16" ispointer="0" value="-1879"/>
+                <element datatype="int16" ispointer="0" value="-2473"/>
+                <element datatype="int16" ispointer="0" value="-3003"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1856" name="Baby Goron Mid Loop">
+      <struct name="ALADPCMLoop" HAS_TAIL="1">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="19135"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="23717"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="-1"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="23744"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL">
+          <element datatype="ALADPCMTail" ispointer="0" value="0">
+            <struct name="ALADPCMTail">
+              <field name="some_adpcm_data" datatype="int16" ispointer="0" isarray="1"
+                     meaning="None" arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="21388"/>
+                <element datatype="int16" ispointer="0" value="19321"/>
+                <element datatype="int16" ispointer="0" value="15231"/>
+                <element datatype="int16" ispointer="0" value="10164"/>
+                <element datatype="int16" ispointer="0" value="3937"/>
+                <element datatype="int16" ispointer="0" value="-2765"/>
+                <element datatype="int16" ispointer="0" value="-7702"/>
+                <element datatype="int16" ispointer="0" value="-11261"/>
+                <element datatype="int16" ispointer="0" value="-13705"/>
+                <element datatype="int16" ispointer="0" value="-15120"/>
+                <element datatype="int16" ispointer="0" value="-15191"/>
+                <element datatype="int16" ispointer="0" value="-13231"/>
+                <element datatype="int16" ispointer="0" value="-10351"/>
+                <element datatype="int16" ispointer="0" value="-7663"/>
+                <element datatype="int16" ispointer="0" value="-5422"/>
+                <element datatype="int16" ispointer="0" value="-2290"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="160" name="Synth Strings Mid Loop">
+      <struct name="ALADPCMLoop" HAS_TAIL="1">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="14507"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="55427"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="-1"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="55456"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL">
+          <element datatype="ALADPCMTail" ispointer="0" value="0">
+            <struct name="ALADPCMTail">
+              <field name="some_adpcm_data" datatype="int16" ispointer="0" isarray="1"
+                     meaning="None" arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="5110"/>
+                <element datatype="int16" ispointer="0" value="6075"/>
+                <element datatype="int16" ispointer="0" value="6869"/>
+                <element datatype="int16" ispointer="0" value="7237"/>
+                <element datatype="int16" ispointer="0" value="7079"/>
+                <element datatype="int16" ispointer="0" value="6439"/>
+                <element datatype="int16" ispointer="0" value="5382"/>
+                <element datatype="int16" ispointer="0" value="4031"/>
+                <element datatype="int16" ispointer="0" value="2574"/>
+                <element datatype="int16" ispointer="0" value="1053"/>
+                <element datatype="int16" ispointer="0" value="-491"/>
+                <element datatype="int16" ispointer="0" value="-1948"/>
+                <element datatype="int16" ispointer="0" value="-3356"/>
+                <element datatype="int16" ispointer="0" value="-4691"/>
+                <element datatype="int16" ispointer="0" value="-5857"/>
+                <element datatype="int16" ispointer="0" value="-6906"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1568" name="Piano Low Loop">
+      <struct name="ALADPCMLoop" HAS_TAIL="1">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="47434"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="55394"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="-1"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="55424"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL">
+          <element datatype="ALADPCMTail" ispointer="0" value="0">
+            <struct name="ALADPCMTail">
+              <field name="some_adpcm_data" datatype="int16" ispointer="0" isarray="1"
+                     meaning="None" arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="-2054"/>
+                <element datatype="int16" ispointer="0" value="-1957"/>
+                <element datatype="int16" ispointer="0" value="-1645"/>
+                <element datatype="int16" ispointer="0" value="-1377"/>
+                <element datatype="int16" ispointer="0" value="-1103"/>
+                <element datatype="int16" ispointer="0" value="-976"/>
+                <element datatype="int16" ispointer="0" value="-916"/>
+                <element datatype="int16" ispointer="0" value="-917"/>
+                <element datatype="int16" ispointer="0" value="-968"/>
+                <element datatype="int16" ispointer="0" value="-927"/>
+                <element datatype="int16" ispointer="0" value="-685"/>
+                <element datatype="int16" ispointer="0" value="-429"/>
+                <element datatype="int16" ispointer="0" value="-54"/>
+                <element datatype="int16" ispointer="0" value="131"/>
+                <element datatype="int16" ispointer="0" value="16"/>
+                <element datatype="int16" ispointer="0" value="-401"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1712" name="Piano Mid Loop">
+      <struct name="ALADPCMLoop" HAS_TAIL="1">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="50130"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="69011"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="-1"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="69041"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL">
+          <element datatype="ALADPCMTail" ispointer="0" value="0">
+            <struct name="ALADPCMTail">
+              <field name="some_adpcm_data" datatype="int16" ispointer="0" isarray="1"
+                     meaning="None" arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="729"/>
+                <element datatype="int16" ispointer="0" value="232"/>
+                <element datatype="int16" ispointer="0" value="-278"/>
+                <element datatype="int16" ispointer="0" value="-798"/>
+                <element datatype="int16" ispointer="0" value="-1301"/>
+                <element datatype="int16" ispointer="0" value="-1778"/>
+                <element datatype="int16" ispointer="0" value="-2234"/>
+                <element datatype="int16" ispointer="0" value="-2651"/>
+                <element datatype="int16" ispointer="0" value="-3022"/>
+                <element datatype="int16" ispointer="0" value="-3360"/>
+                <element datatype="int16" ispointer="0" value="-3652"/>
+                <element datatype="int16" ispointer="0" value="-3912"/>
+                <element datatype="int16" ispointer="0" value="-4132"/>
+                <element datatype="int16" ispointer="0" value="-4329"/>
+                <element datatype="int16" ispointer="0" value="-4495"/>
+                <element datatype="int16" ispointer="0" value="-4646"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+    <item address="1856" name="Piano High Loop">
+      <struct name="ALADPCMLoop" HAS_TAIL="1">
+        <field name="start" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Start"
+               value="41954"/>
+        <field name="end" datatype="uint32" ispointer="0" isarray="0" meaning="Loop End"
+               value="47587"/>
+        <field name="count" datatype="uint32" ispointer="0" isarray="0" meaning="Loop Count"
+               defaultval="-1" value="-1"/>
+        <field name="adpcm_state" datatype="uint32" ispointer="0" isarray="0"
+               meaning="None" defaultval="0" value="47616"/>
+        <field name="tail" datatype="ALADPCMTail" ispointer="0" isarray="1"
+               meaning="Tail Data (if Loop Start != 0)" arraylenvar="HAS_TAIL">
+          <element datatype="ALADPCMTail" ispointer="0" value="0">
+            <struct name="ALADPCMTail">
+              <field name="some_adpcm_data" datatype="int16" ispointer="0" isarray="1"
+                     meaning="None" arraylenfixed="16">
+                <element datatype="int16" ispointer="0" value="1436"/>
+                <element datatype="int16" ispointer="0" value="850"/>
+                <element datatype="int16" ispointer="0" value="264"/>
+                <element datatype="int16" ispointer="0" value="-305"/>
+                <element datatype="int16" ispointer="0" value="-850"/>
+                <element datatype="int16" ispointer="0" value="-1358"/>
+                <element datatype="int16" ispointer="0" value="-1820"/>
+                <element datatype="int16" ispointer="0" value="-2242"/>
+                <element datatype="int16" ispointer="0" value="-2620"/>
+                <element datatype="int16" ispointer="0" value="-2968"/>
+                <element datatype="int16" ispointer="0" value="-3277"/>
+                <element datatype="int16" ispointer="0" value="-3566"/>
+                <element datatype="int16" ispointer="0" value="-3820"/>
+                <element datatype="int16" ispointer="0" value="-4046"/>
+                <element datatype="int16" ispointer="0" value="-4250"/>
+                <element datatype="int16" ispointer="0" value="-4428"/>
+              </field>
+            </struct>
+          </element>
+        </field>
+      </struct>
+    </item>
+  </aladpcmloops>
+</bank>
